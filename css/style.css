@@ -1,0 +1,73 @@
+/* line 1, /Users/f5proje/ownCloud/bootstrap_hasan/css/style.scss */
+.view-mainpage-slide img {
+  width: 100%;
+  height: auto; }
+
+/* line 6, /Users/f5proje/ownCloud/bootstrap_hasan/css/style.scss */
+.navbar-brand img {
+  width: auto;
+  max-height: 2.75rem; }
+
+/* line 11, /Users/f5proje/ownCloud/bootstrap_hasan/css/style.scss */
+.carousel-mainpage-indicators {
+  justify-content: flex-start !important; }
+  /* line 14, /Users/f5proje/ownCloud/bootstrap_hasan/css/style.scss */
+  .carousel-mainpage-indicators button {
+    width: 15px !important;
+    height: 15px !important;
+    display: inline-block;
+    border-radius: 6px;
+    margin: 0.4em;
+    border-top: 0px solid transparent !important;
+    border-bottom: 0px solid transparent !important;
+    background: #fff;
+    width: 15px;
+    height: 15px; }
+    /* line 26, /Users/f5proje/ownCloud/bootstrap_hasan/css/style.scss */
+    .carousel-mainpage-indicators button:hover {
+      background: #F39618; }
+    /* line 30, /Users/f5proje/ownCloud/bootstrap_hasan/css/style.scss */
+    .carousel-mainpage-indicators button .active {
+      background: #F39618; }
+
+/* line 37, /Users/f5proje/ownCloud/bootstrap_hasan/css/style.scss */
+.menu--main .nav-link:hover,
+.menu--main .active {
+  color: #F39618 !important; }
+
+/* line 43, /Users/f5proje/ownCloud/bootstrap_hasan/css/style.scss */
+.menu--main li a {
+  display: inline-block; }
+  /* line 46, /Users/f5proje/ownCloud/bootstrap_hasan/css/style.scss */
+  .menu--main li a:after {
+    content: "";
+    display: block;
+    margin-top: 5px;
+    height: 2px;
+    width: 0px;
+    background-color: #F39618;
+    -webkit-transition: opacity .3s ease, width .3s ease;
+    -moz-transition: opacity .3s ease, width .3s ease;
+    -o-transition: opacity .3s ease, width .3s ease;
+    transition: opacity .3s ease, width .3s ease;
+    -ms-transition: opacity .3s ease, width .3s ease; }
+
+/* line 63, /Users/f5proje/ownCloud/bootstrap_hasan/css/style.scss */
+.menu--main li:hover a:after {
+  width: 100%; }
+
+/* line 72, /Users/f5proje/ownCloud/bootstrap_hasan/css/style.scss */
+.offcanvas-end {
+  background-color: #09214e;
+  width: 412px; }
+
+/* line 78, /Users/f5proje/ownCloud/bootstrap_hasan/css/style.scss */
+.view-mainpage-slide .carousel-caption {
+  bottom: 50%;
+  transform: translateY(75%); }
+
+/* line 84, /Users/f5proje/ownCloud/bootstrap_hasan/css/style.scss */
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 .1rem; }
+
+/*# sourceMappingURL=style.css.map */

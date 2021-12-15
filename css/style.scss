@@ -1,0 +1,86 @@
+.view-mainpage-slide img {
+    width: 100%;
+    height: auto;
+}
+
+.navbar-brand img {
+    width: auto;
+    max-height: 2.75rem;
+}
+
+.carousel-mainpage-indicators {
+    justify-content: flex-start !important;
+
+    button {
+        width: 15px !important;
+        height: 15px !important;
+        display: inline-block;
+        border-radius: 6px;
+        margin: 0.4em;
+        border-top: 0px solid transparent !important;
+        border-bottom: 0px solid transparent !important;
+        background: #fff;
+        width: 15px;
+        height: 15px;
+
+        &:hover {
+            background: #F39618;
+        }
+
+        .active {
+            background: #F39618;
+        }
+    }
+}
+
+.menu--main {
+    .nav-link:hover,
+    .active {
+            color: #F39618 !important;
+    }
+
+    li {
+        a {
+            display: inline-block;
+
+            &:after {
+                content: "";
+                display: block;
+                margin-top: 5px;
+                height: 2px;
+                width: 0px;
+                background-color: #F39618;
+                -webkit-transition: opacity .3s ease, width .3s ease;
+                -moz-transition: opacity .3s ease, width .3s ease;
+                -o-transition: opacity .3s ease, width .3s ease;
+                transition: opacity .3s ease, width .3s ease;
+                -ms-transition: opacity .3s ease, width .3s ease;
+            }
+        }
+
+        &:hover {
+            a {
+                &:after {
+                    width: 100%;
+                }
+            }
+        }
+
+    }
+}
+
+.offcanvas-end {
+    background-color: #09214e;
+    width: 412px;
+}
+
+.view-mainpage-slide {
+    .carousel-caption {
+        bottom: 50%;
+        transform: translateY(75%);
+    }
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 .1rem;
+}

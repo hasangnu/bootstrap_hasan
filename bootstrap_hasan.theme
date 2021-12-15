@@ -1,0 +1,38 @@
+<?php
+
+use Drupal\Core\Form\FormStateInterface;
+
+function bootstrap_hasan_form_system_theme_settings_alter(&$form, FormStateInterface $form_state) {
+  $form['components']['navbar']['bootstrap_barrio_navbar_top_background']['#options'] = [
+    'bg-primary' => t('Primary'),
+    'bg-secondary' => t('Secondary'),
+    'bg-light' => t('Light'),
+    'bg-dark' => t('Dark'),
+    'bg-white' => t('White'),
+    'bg-transparent' => t('Transparent'),
+  ];
+  $form['components']['navbar']['bootstrap_barrio_navbar_background']['#options'] = [
+    'bg-primary' => t('Primary'),
+    'bg-secondary' => t('Secondary'),
+    'bg-light' => t('Light'),
+    'bg-dark' => t('Dark'),
+    'bg-white' => t('White'),
+    'bg-transparent' => t('Transparent'),
+  ];
+
+  $form['fonts']['fonts']['bootstrap_barrio_google_fonts']['#options']['roboto_monserrat'] = 'Roboto Monserrat';
+
+}
+
+function bootstrap_hasan_preprocess_page(&$variables) {
+    $fonts = theme_get_setting('bootstrap_barrio_google_fonts');
+    if ($fonts)
+        $variables['#attached']['library'][] = (in_array($fonts, ['roboto_monserrat']) ? 'bootstrap_hasan' : 'bootstrap_barrio' ) . '/' . $fonts;
+    
+    $site_config = \Drupal::config('system.site');
+    $variables['site_name'] = $site_config->get('name');
+    $variables['site_slogan'] = $site_config->get('slogan');
+    
+    $variables['hasan_logo'] = file_url_transform_relative(file_create_url(theme_get_setting('logo.url')));
+    
+}
