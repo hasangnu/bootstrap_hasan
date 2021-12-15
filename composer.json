@@ -22,9 +22,12 @@
     "conflict": {
         "drupal/drupal": "*"
     },
+    "require": {
+        "drupal/bootstrap_barrio": "^5.5"
+    },
     "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {
-      "sort-packages": true
+        "sort-packages": true
     }
 }
