@@ -23,7 +23,7 @@
         "drupal/drupal": "*"
     },
     "require": {
-        "hasangnu/bootstrap_barrio": "^5.5"
+        "hasangnu/bootstrap_barrio"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
